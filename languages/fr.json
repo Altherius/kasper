@@ -1,0 +1,226 @@
+{
+	"kasper": {
+		"title": "👻 KASPER",
+		"subtitle": "Karma Assessment and Player Evaluation Resource",
+		"settings": {
+			"canPlayersView": {
+				"name": "Visible pour les joueurs ?",
+				"hint": "Si activé, les factions seront visibles par défaut pour les joueurs. Activez cette option pour montrer toutes les factions par défaut. Laissez désactivé pour cacher toutes les factions par défaut."
+			},
+			"minify.name": "Activer le style compact ?",
+			"minify.hint": "Cela rendra l'interface du gestionnaire plus petite et plus compacte. Attention, le titre de la réputation sera superposé à la barre colorée et sera difficilement visible avec certaines couleurs.",
+			"trigger": {
+				"name": "Méthode d'activation ?",
+				"hint": "Comment voulez-vous activer l'interface de KASPER ? Bouton affichera un bouton en haut de l'onglet Journal. Épinglé épinglera la fenêtre au-dessus des notes sous l'onglet Journal.",
+				"choices": {
+					"dialog": "Bouton",
+					"pinned": "Épinglé"
+				}
+			},
+			"disableWheel": {
+				"name": "Désactiver la molette ?",
+				"hint": "Si activé, il sera impossible d'ajuster la réputation à la molette à moins d'appuyer sur CTRL.",
+				"hintDisabled": "DÉSACTIVÉ : Ce paramètre est désactivé quand '{moduleTitle}' est activé. Utilisez ce module pour configurer la manière dont les curseurs fonctionnent."
+			},
+			"config": {
+				"name": "Configurer les valeurs par défaut",
+				"hint": "Ce sont les valeurs par défaut pour toutes les réputations. Vous pouvez configurer les valeurs spécifiques d'une réputation en faisant un clic-droit dessus dans le gestionnaire.",
+				"label": "Configurer les valeurs par défaut"
+			}
+		},
+		"manager": {
+			"title": "Gestionnaire",
+			"sortable": "Cliquez-glissez pour ordonner",
+			"addFaction": "Ajouter une faction",
+			"decreaseReputation": "Diminuer la réputation",
+			"increaseReputation": "Augmenter la réputation",
+			"dragDrop": {
+				"addReputation": "Ajouter de la réputation",
+				"dropHere": "Déposez ici"
+			},
+			"contextMenu": {
+				"altTitle": "Définir titre alternatif pour les joueurs",
+				"togglePlayerView": {
+					"show": "Montrer aux joueurs",
+					"showAll": "Montrer toutes les factions aux joueurs",
+					"hide": "Cacher pour les joueurs",
+					"hideAll": "Cacher toutes les factions pour les joueurs"
+				}
+			},
+			"dialog": {
+				"setAltTitle": {
+					"label": "Titre alternatif",
+					"hint": "Si elle est définie, cette valeur sera montrée aux joueurs au lieu du nom par défaut. Ceci est utile pour cacher le nom de la faction pour les joueurs."
+				}
+			}
+		},
+		"configure": {
+			"title": "Configurer",
+			"titles": {
+				"global": "Configurer les valeurs par défaut",
+				"reputation": "Configurer les paramètres de la réputation {title}",
+				"faction": "Configurer les paramètres de la faction {title}"
+			},
+			"settings": {
+				"title": "Definir les intervalles",
+				"override": {
+					"name": "Definir les paramètres uniques",
+					"hint": "Ceci écrasera le paramétrage pour cet élément et ses enfants."
+				},
+				"presets": {
+					"name": "Charger un préréglage",
+					"hint": "Ceci chargera un préréglage de valeurs pour la réputation sélectionnée.",
+					"custom.name": "Personnalisé",
+					"inherit.name": "Hériter"
+				},
+				"minimum": {
+					"name": "Valeur de réputation minimale",
+					"hint": "C'est la valeur la plus basse pour une réputation. C'est normalement la valeur la plus négative."
+				},
+				"maximum": {
+					"name": "Valeur de réputation maximale",
+					"hint": "C'est la valeur la plus haute pour une réputation. C'est normalement la valeur la plus positive."
+				},
+				"default": {
+					"name": "Valeur de réputation par défaut",
+					"hint": "C'est la valeur par défaut qu'une réputation prendra quand une nouvelle faction sera ajoutée."
+				},
+				"colorize": {
+					"name": "Colorer la barre de réputation ?",
+					"hint": "Ceci colorera la barre de réputation en fonction de la valeur de la réputation."
+				}
+			},
+			"tiers": {
+				"title": "Définir les échelons",
+				"headingLabel": "Nom de l'échelon",
+				"addTierLabel": "Créer l'échelon"
+			},
+			"dialog": {
+				"overwriteGlobalDefaults": {
+					"title": "Écraser les valeurs par défaut",
+					"content": "Attention ! Les valeurs par défaut seront écrasées avec ce paramètre. Êtes-vous sûr de vouloir continuer ?"
+				},
+				"updatePreset": {
+					"title": "Mettre à jour le préréglage {title}",
+					"content": "Attention ! Le préréglage {title} sera écrasé, et toutes les réputations qui utilisent ce préréglage seront modifiées. Êtes-vous sûr de vouloir continuer ?"
+				},
+				"custom": {
+					"title": "Créer un nouveau préréglage personnalisé",
+					"label": "Nom du préréglage",
+					"hint": "Veuillez entrer un nom de préréglage. Ce nom sera utilisé pour créer un sélecteur facilement accessible avec KASPER."
+				}
+			},
+			"tooltips": {
+				"overrideGlobalDefaults": "Gardez enfoncé SHIFT pour écraser les valeurs par défaut"
+			},
+			"notifications.error": {
+				"overwriteGlobalDefaultsRejected": "<strong>{title}</strong> : L'utilisateur a choisi de ne pas écraser les valeurs par défaut. Le préréglage n'a pas été modifié !",
+				"noPresetTitle": "<strong>{title}</strong>: Un titre est requis pour créer un préréglage personnalisé. Le préréglage n'a pas été créé !",
+				"presetTitleExists": "<strong>{title}</strong>: <em>{preset}</em> est déjà un préréglage existant. Le préréglage n'a pas été créé !",
+				"presetTitleProtected": "<strong>{title}</strong>: <em>{preset}</em> est un mot-clé réservé et ne peut pas être utilisé. Le préréglage n'a pas été modifié !"
+			},
+			"notifications.warn.overwriteRejected": "<strong>{title}</strong>: <em>{preset}</em> Le préréglage n'a pas été modifié !"
+		},
+		"reputation": {
+			"title": "Nom de la réputation",
+			"faction": {
+				"title": "Nom de la faction"
+			}
+		},
+
+		"TIERS": {
+			"globalDefaults": {
+				"title": "Valeurs par défaut"
+			},
+			"house-divided": {
+				"title": "Une maison divisée",
+				"labels": {
+					"Despised": "Méprisé",
+  					"Scorned": "Dédaigné",
+					"Unfriendly": "Inamical",
+					"Neutral": "Neutre",
+					"Friendly": "Amical",
+					"Loyal": "Loyal",
+					"Devoted": "Dévoué"
+				}
+			}, 
+			"fallout": {
+				"title": "Fallout",
+				"labels": {
+					"VeryGood": "Très bonne",
+					"Good": "Bonne",
+					"Neutral": "Neutre",
+					"Bad": "Mauvaise",
+					"VeryBad": "Très mauvaise"
+				}
+			},
+			"solider-ranks": {
+				"title": "Grades de soldats",
+				"labels": {
+					"Unlisted": "Non-répertorié",
+					"Private": "Soldat",
+					"Corporal": "Caporal",
+					"Sergeant": "Sergent",
+					"MasterSergeant": "Sergent-chef",
+					"SecondLieutenant": "Sous-lieutenant",
+					"FirstLieutenant": "Lieutenant",
+					"Captain": "Capitaine",
+					"Major": "Commandant",
+					"Colonel": "Colonel",
+					"BrigadierGeneral": "Général de brigade",
+					"MajorGeneral": "Général de division",
+					"LieutenantGeneral": "Général de corps d'armée",
+					"General": "Général d'armée",
+					"Commander": "Maréchal"
+				}
+			},
+			"generic": {
+				"title": "Générique",
+				"labels": {
+					"Infamous": "Infâme",
+					"Exalted": "Exalté",
+					"Feared": "Redouté",
+					"Loathed": "Détesté",
+					"Despised": "Méprisé",
+					"Hated": "Haï",
+					"Scorned": "Dédaigné",
+					"Neutral": "Neutre",
+					"Friendly": "Amical",
+					"Allied": "Allié",
+					"Respcted": "Respecté",
+					"Revered": "Révéré"
+				}
+			},
+			"simple": {
+				"title": "Simple",
+				"labels": {
+					"Enemy": "Ennemi",
+					"Neutral": "Neutre",
+					"Friendly": "Ami"
+				}
+			},
+			"pf2e-reputations": {
+				"title": "Réputation de Pathfinder 2E",
+				"labels": {
+					"Hunted": "Pourchassé",
+					"Hated": "Détesté",
+					"Disliked": "Méprisé",
+					"Ignored": "Ignoré",
+					"Liked": "Apprécié",
+					"Admired": "Admiré",
+					"Revered": "Révéré"
+				}
+			},
+			"pf2e-attitudes": {
+				"title": "Attitudes de Pathfinder 2E",
+				"labels": {
+					"Hostile": "Hostile",
+					"Unfriendly": "Inamical",
+					"Indifferent": "Indifférent",
+					"Friendly": "Amical",
+					"Helpful": "Serviable"
+				}
+			}
+		}
+	}
+}
